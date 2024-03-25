@@ -38,7 +38,7 @@ app.post('/gh_user_repos', async (req: any, res: any) => {
         }));
         let existingData: any = {};
         try {
-                existingData = JSON.parse(fs.readFileSync('repositories.json', 'utf-8'));
+            existingData = JSON.parse(fs.readFileSync('repositories.json', 'utf-8'));
         } catch (error) {
             console.log("Error reading JSON file:", error);
         }
